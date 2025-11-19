@@ -600,7 +600,7 @@ def save_conf(): # Save schedule configuration
     config['light10_2'] = light10_2
 
     config['date1_2'] = date1_2
-    config['month1_2'] = year1_2
+    config['month1_2'] = month1_2
     config['year1_2'] = year1_2
 
     config['date2_2'] = date2_2
@@ -964,8 +964,8 @@ def read_conf(): # Read schedule configuration
     light10_2 = config['light10_2'] 
 
     date1_2 = config['date1_2']
-    year1_2 = config['month1_2'] 
-    year1_2 = config['year1_2'] 
+    month1_2 = config['month1_2']
+    year1_2 = config['year1_2']
 
     date2_2 = config['date2_2'] 
     month2_2 = config['month2_2'] 
