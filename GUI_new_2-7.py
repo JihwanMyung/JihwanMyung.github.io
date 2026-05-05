@@ -448,7 +448,7 @@ def get_data(): # Start recording
 
             i=i+1
     except:
-        print('Stopped recording and disconnected to the device')
+        print('Stopped recording and disconnected from the device')
 
 def writeToJSONFile(filename, data):
     filePathNameWExt = filename
@@ -1226,7 +1226,7 @@ def disconnect():  # close the serial_obj thread
 
     status.pack(side="bottom", fill="x")
 
-    status.set("Stopped recording and disconnected to the device.")
+    status.set("Stopped recording and disconnected from the device.")
 
         
 

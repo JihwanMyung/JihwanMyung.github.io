@@ -448,7 +448,7 @@ def get_data(): # Start recording
 
             i=i+1
     except:
-        print('Stopped recording and disconnected to the device')
+        print('Stopped recording and disconnected from the device')
 
 def writeToJSONFile(filename, data):
     filePathNameWExt = filename
@@ -464,7 +464,7 @@ def save_conf(): # Save schedule configuration
     config={}
     config['hourOn1_1'] = hourOn1_1
     config['minOn1_1'] = minOn1_1
-    config['hourOff1_1'] = minOff1_1
+    config['hourOff1_1'] = hourOff1_1
     config['minOff1_1'] = minOff1_1
 
     config['hourOn2_1'] = hourOn2_1
@@ -505,6 +505,11 @@ def save_conf(): # Save schedule configuration
     config['hourOn9_1'] = hourOn9_1
     config['minOn9_1'] = minOn9_1
     config['hourOff9_1'] = hourOff9_1
+    config['minOff9_1'] = minOff9_1
+
+    config['hourOn10_1'] = hourOn10_1
+    config['minOn10_1'] = minOn10_1
+    config['hourOff10_1'] = hourOff10_1
     config['minOff10_1'] = minOff10_1
 
     config['dark1_1'] = dark1_1
@@ -826,10 +831,10 @@ def read_conf(): # Read schedule configuration
     Label(tab11, text=config, wraplength=1000).grid(column=0, row= 3, columnspan='100', sticky='we')
     
 
-    hourOn1_1 = config['hourOn1_1'] 
-    minOn1_1 = config['minOn1_1'] 
-    minOff1_1 = config['hourOff1_1']
-    minOff1_1 = config['minOff1_1'] 
+    hourOn1_1 = config['hourOn1_1']
+    minOn1_1 = config['minOn1_1']
+    hourOff1_1 = config['hourOff1_1']
+    minOff1_1 = config['minOff1_1']
 
     hourOn2_1 = config['hourOn2_1']
     minOn2_1 = config['minOn2_1'] 
@@ -866,10 +871,15 @@ def read_conf(): # Read schedule configuration
     hourOff8_1 = config['hourOff8_1'] 
     minOff8_1 = config['minOff8_1'] 
 
-    hourOn9_1 =config['hourOn9_1'] 
-    minOn9_1 = config['minOn9_1'] 
-    hourOff9_1 = config['hourOff9_1'] 
-    minOff10_1 = config['minOff10_1'] 
+    hourOn9_1 =config['hourOn9_1']
+    minOn9_1 = config['minOn9_1']
+    hourOff9_1 = config['hourOff9_1']
+    minOff9_1 = config['minOff9_1']
+
+    hourOn10_1 = config['hourOn10_1']
+    minOn10_1 = config['minOn10_1']
+    hourOff10_1 = config['hourOff10_1']
+    minOff10_1 = config['minOff10_1']
 
     dark1_1 = config['dark1_1'] 
     light1_1 = config['light1_1']
@@ -1226,7 +1236,7 @@ def disconnect():  # close the serial_obj thread
 
     status.pack(side="bottom", fill="x")
 
-    status.set("Stopped recording and disconnected to the device.")
+    status.set("Stopped recording and disconnected from the device.")
 
         
 
