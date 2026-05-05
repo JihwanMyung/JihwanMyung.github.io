@@ -17,6 +17,17 @@ Run Python GUI interface by double-clicking the .py file or on command-line usin
 
 This software system requires Arduino Mega 2560 for controlling 10 boxes and a digital slot extension (custom-made). Each box requires 1 PIR sensor (digital input) and 1 relay switch.
 
+## Figure generation guidelines
+
+- Use Helvetica for all figure text.
+- Use journal production-grade font sizes so text remains legible after publication scaling.
+- Minimize the use of colors.
+- Show axes or frames only on the left and bottom.
+- Do not use full boxes unless necessary (for example, parameter-space plots).
+- Remove frames and axes when a scale bar or scale axes is sufficient.
+- Do not add labels inside figures that merely explain what the figure is.
+- Keep figures concise and visually minimal.
+
 ## Authors
 
 * Jihwan Myung - initial work
